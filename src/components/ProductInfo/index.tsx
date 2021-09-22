@@ -1,6 +1,10 @@
 import "./index.css";
 import { Grid, Paper, Typography } from "@material-ui/core";
+import SkuInfo from "../SkuInfo";
 
+// Id
+// Name
+// Description
 const ProductInfo=()=>{
     return (
         <div className="productInfo">
@@ -32,8 +36,11 @@ const ProductInfo=()=>{
                     706.93
                   </Typography>                
                 </Grid> 
-                <Grid item lg={12}/>                               
+                <Grid item lg={12}/>  
               </Grid>
+              
+              <SkuInfo/>
+
             </Grid>
         </div>
     )
