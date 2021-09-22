@@ -17,21 +17,25 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
+/**
+ * Navbar at top of the page
+ * @returns a component of a Navigation Bar
+*/
 export default function NavigationBar() {
-    const classes = useStyles();
-  
-    return (
-      <div className={classes.root}>
-        <AppBar position="static">
-          <Toolbar variant="dense">
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h6" color="inherit">
-              Navigation Bar
-            </Typography>
-          </Toolbar>
-        </AppBar>
-      </div>
-    );
-  }
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      <AppBar position="static">
+        <Toolbar variant="dense">
+          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" color="inherit">
+            Navigation Bar
+          </Typography>
+        </Toolbar>
+      </AppBar>
+    </div>
+  );
+}

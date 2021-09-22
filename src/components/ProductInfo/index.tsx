@@ -2,9 +2,10 @@ import "./index.css";
 import { Grid, Paper, Typography } from "@material-ui/core";
 import SkuInfo from "../SkuInfo";
 
-// Id
-// Name
-// Description
+/**
+ * ProductInfo attributes 
+ * @returns ProductInfo component with Skus
+ */
 const ProductInfo=()=>{
     return (
         <div className="productInfo">
